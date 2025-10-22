@@ -1,0 +1,65 @@
+<svg width="200" height="40" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#6ee7b7;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <mask id="mask0" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="40">
+        <path d="M200 0H0V40H200V0Z" fill="white"/>
+    </mask>
+
+    <g mask="url(#mask0)">
+        <!-- Leaf icon design -->
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M18 4C18 4 28 2 32 12C34 17 33 22 28 26C24 29 18 30 12 28C8 26.5 6 23 6 19C6 14 10 8 18 4Z"
+              fill="url(#grad1)">
+            <animateTransform attributeName="transform" type="rotate" from="0 20 15" to="5 20 15" dur="3s" repeatCount="indefinite"/>
+        </path>
+
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M22 6C22 6 14 4 10 14C8 19 9 24 14 28C18 31 24 32 30 30C34 28.5 36 25 36 21C36 16 32 10 22 6Z"
+              fill="url(#grad2)" opacity="0.8">
+            <animateTransform attributeName="transform" type="rotate" from="0 20 15" to="-5 20 15" dur="3s" repeatCount="indefinite"/>
+        </path>
+
+        <!-- Stem -->
+        <path d="M20 15 Q22 20 20 28" stroke="url(#grad3)" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+        <!-- Text: EcoEvent -->
+        <g transform="translate(45, 0)">
+            <!-- E -->
+            <path d="M2 8 H12 M2 8 V24 M2 16 H10 M2 24 H12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <!-- c -->
+            <path d="M22 18 Q18 15 15 18 Q13 20 13 22 Q13 24 15 26 Q18 29 22 26" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+            <!-- o -->
+            <ellipse cx="29" cy="22" rx="4.5" ry="6.5" stroke="white" stroke-width="2.5" fill="none"/>
+
+            <!-- E -->
+            <path d="M40 8 H50 M40 8 V24 M40 16 H48 M40 24 H50" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <!-- v -->
+            <path d="M56 15 L60 26 L64 15" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+            <!-- e -->
+            <path d="M70 22 H79 Q79 18 76 16 Q73 14 70 16 Q67 18 67 22 Q67 26 70 28 Q73 30 76 28" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+            <!-- n -->
+            <path d="M84 15 V28 M84 18 Q86 15 90 15 V28" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <!-- t -->
+            <path d="M98 10 V26 Q98 28 100 28 H102 M94 15 H102" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+    </g>
+</svg>

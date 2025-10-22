@@ -1,0 +1,198 @@
+/* Project Header Card */
+.project-header-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.project-header-card .lead {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.badge-custom {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+/* Progress Circle */
+.progress-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #fff 0%,
+        #fff calc(var(--progress) * 1%),
+        rgba(255, 255, 255, 0.2) calc(var(--progress) * 1%),
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.progress-circle-inner {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+
+.progress-label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Tasks Section */
+.tasks-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.task-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.task-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    border-color: #667eea;
+}
+
+.task-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.task-status-pending {
+    background: #ffc107;
+    color: #000;
+}
+
+.task-status-in_progress,
+.task-status-in-progress {
+    background: #17a2b8;
+    color: white;
+}
+
+.task-status-completed {
+    background: #28a745;
+    color: white;
+}
+
+.task-status-on_hold,
+.task-status-on-hold {
+    background: #6c757d;
+    color: white;
+}
+
+.task-meta {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+}
+
+.meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.meta-item i {
+    font-size: 1rem;
+}
+
+.priority-high {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.priority-medium {
+    color: #ffc107;
+    font-weight: 600;
+}
+
+.priority-low {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.task-actions {
+    margin-left: 1rem;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.empty-state i {
+    opacity: 0.3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-header-card {
+        padding: 1.5rem;
+    }
+
+    .progress-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .progress-circle-inner {
+        width: 95px;
+        height: 95px;
+    }
+
+    .progress-value {
+        font-size: 1.5rem;
+    }
+
+    .tasks-section {
+        padding: 1.5rem;
+    }
+
+    .task-card {
+        padding: 1rem;
+    }
+
+    .task-actions {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
