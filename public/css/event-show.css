@@ -1,0 +1,244 @@
+/* Event Header Card */
+.event-header-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.event-header-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.event-date-badge {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: white;
+    color: #667eea;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 80px;
+}
+
+.date-day {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.date-month {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.event-header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.event-meta-primary {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.meta-item-large {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.meta-item-large i {
+    font-size: 1.5rem;
+}
+
+.meta-label {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.meta-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Event Cards */
+.event-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.event-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #34495e;
+}
+
+/* Info Cards */
+.info-card {
+    padding: 1.5rem;
+}
+
+.info-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-card-content {
+    color: #495057;
+}
+
+/* Location Styles */
+.location-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.location-address {
+    color: #6c757d;
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.location-city {
+    font-size: 0.9rem;
+    padding-left: 1.5rem;
+}
+
+/* Map Styles */
+.location-map {
+    margin-top: 1rem;
+}
+
+.location-map iframe {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Capacity Styles */
+.capacity-display {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.capacity-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #667eea;
+    line-height: 1;
+}
+
+.capacity-label {
+    display: block;
+    font-size: 0.875rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.25rem;
+}
+
+.capacity-bar {
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.capacity-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #28a745 0%, #20c997 100%);
+    transition: width 0.3s ease;
+}
+
+.capacity-text {
+    text-align: center;
+}
+
+/* Quick Info */
+.quick-info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.quick-info-item:last-child {
+    border-bottom: none;
+}
+
+.quick-info-label {
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.quick-info-value {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .event-date-badge {
+        position: static;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-header-card {
+        padding: 1.5rem;
+    }
+
+    .event-card {
+        padding: 1.5rem;
+    }
+
+    .meta-item-large {
+        flex: 1 1 100%;
+    }
+
+    .capacity-number {
+        font-size: 2.5rem;
+    }
+}
